@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.maids.cc.Library.Management.System.LibraryManagementSystemApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.254 s <<< FAILURE! - in com.maids.cc.Library.Management.System.LibraryManagementSystemApplicationTests
+contextLoads  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+com.maids.cc.Library.Management.System.controller.BookController#findBook(int)
+to {GET [/api/]}: There is already 'bookController' bean method
+com.maids.cc.Library.Management.System.controller.BookController#findBooks() mapped.
+Caused by: java.lang.IllegalStateException: 
+Ambiguous mapping. Cannot map 'bookController' method 
+com.maids.cc.Library.Management.System.controller.BookController#findBook(int)
+to {GET [/api/]}: There is already 'bookController' bean method
+com.maids.cc.Library.Management.System.controller.BookController#findBooks() mapped.
+
